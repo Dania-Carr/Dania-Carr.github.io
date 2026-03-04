@@ -1,0 +1,13 @@
+# Shiny
+
+## Introduction 
+
+From homework but tweaking data to be a little more interesting
+
+## Dashboard (will change to my own)
+(will change to my own)
+<iframe src="https://jclip.shinyapps.io/baby-names/" style="border: 1px solid #AAA; width: 800px; height: 760px"></iframe>
+
+## Insights
+Adding
+

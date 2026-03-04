@@ -3,19 +3,24 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: 'Projects' ## setting up a drop down menu
+    - text: 'Visualizations' 
       menu:
-        - text: 'Plotly'
+        - text: 'Geospatial Visualization'
           href: text.html
-        - text: 'Shiny/Tableau'
+        - text: 'Tableau'
           href: text2.html
-    - text: "About"
+        - text: 'Shiny'
+          href: text3.html
+        - text: 'Plotly'
+          href: text4.html
+    - text: "Contact"
       href: about.html
-    - icon: fa-github fa-lg
-      href: http://github.com/
+
 output: 
   html_document:
     theme: united
     toc: yes
     toc_float:
       collapsed: false
+      css: style.css
+ 

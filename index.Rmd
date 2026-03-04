@@ -1,24 +1,17 @@
----
-title: "Look at this!"
----
-
-# I have a webpage!
-
-And I can put all kinds of stuff on it!
-
-Here we've got some general setup for your webpage. 
-
-# Here is a heading
-
-[This links to other pages!](about)
 
 
+# About me
 
-## Advancing your skills
+## Dania Carr
 
-You can take what we've done here and do additional adaptations. 
+[will insert profile picture here]
 
-For example, you can explore other formats, [such as prettydoc](https://prettydoc.statr.me/) as it will give you greater customization. 
+### Professional Interests
 
-### Custom CSS
-If you're looking to REALLY customize, you can add a custom.css file. You can see there is an example css file here that can make some changes. To add them, you can add `css: custom.css', indenting it under 'html' in [the _site.yml](_site.yml) file. 
+I am a doctoral student in the Developmental Psychology program at the University of Chicago and an Institute of Education Sciences (IES) fellow. My research examines how socio-emotional, cognitive, and linguistic factors incluence children's mathematical thinking. I am interested in applying my research, data analysis, and data visualization skills to uncover patterns in educational data, generate actionable insights, and support evidence-based strategy and decision making.
+
+### Personal Interests 
+
+I love playing pool, relaxing at the Chicago lakefront (especially during summer months), and hiking. I also love spending time with my husband and my dog. 
+
+[will insert picture of husband and dog]

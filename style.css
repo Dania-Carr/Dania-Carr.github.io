@@ -1,0 +1,26 @@
+/* Navbar background */
+.navbar {
+    background-color: #800000 !important;
+    background-image: none !important;
+    border-color: #800000;
+}
+
+/* Navbar text */
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+    color: white !important;
+}
+
+/* Hover color */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white !important;
+    background-color: #660000 !important;
+}
+
+/*Drop down menu color */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #800000;
+    color: white;
+}
