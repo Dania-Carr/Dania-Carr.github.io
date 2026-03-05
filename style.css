@@ -25,6 +25,7 @@
     color: white;
 }
 
+
 /* Sidebar hover */
 #TOC .nav > li > a:hover {
     background-color: #800000 !important;
@@ -41,4 +42,33 @@
 #TOC .nav > li.active > a:hover {
     background-color: #660000 !important;
     color: white !important;
+}
+
+#table-of-contents header{
+    color: #800000;
+    background-color:  #800000;
+}
+
+.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus {
+    z-index: 2;
+    color: white;
+    background-color: #800000;
+    border-color:#800000
+}
+
+
+a {
+    color: #800000;
+    text-decoration: none
+}
+
+
+
+a:hover, a:focus{
+    color:#800000
+    text-decoration: underline
+}
+
+a:visited{
+    color:#800000
 }
