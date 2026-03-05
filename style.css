@@ -24,3 +24,21 @@
     background-color: #800000;
     color: white;
 }
+
+/* Sidebar hover */
+#TOC .nav > li > a:hover {
+    background-color: #800000 !important;
+    color: white !important;
+}
+
+/* Sidebar active section */
+#TOC .nav > li.active > a {
+    background-color: #800000 !important;
+    color: white !important;
+}
+
+/* Sidebar active hover */
+#TOC .nav > li.active > a:hover {
+    background-color: #660000 !important;
+    color: white !important;
+}

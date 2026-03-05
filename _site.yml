@@ -16,13 +16,13 @@ navbar:
     - text: "Contact"
       href: Contact.html
     - icon: fa-github fa-lg
-      href: http://github.com/jmclip
+      href: http://github.com/Dania-Carr
 
-output: 
+output:
   html_document:
     theme: united
     toc: yes
     toc_float:
       collapsed: false
-    css: style.css
+    css: styles.css
  
