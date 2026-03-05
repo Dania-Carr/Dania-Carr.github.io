@@ -1,101 +1,162 @@
-/* Navbar background */
-.navbar {
-    background-color: #800000 !important;
-    background-image: none !important;
-    border-color: #800000;
+#main .nav-pills > li.active > a,
+#main .nav-pills > li.active > a:hover,
+#main .nav-pills > li.active > a:focus {
+   background-color: #800000;
 }
 
-/* Navbar text */
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-brand {
-    color: white !important;
+/* Navbar link text */
+.navbar-nav .nav-link {
+  color: #800000;
 }
 
-/* Hover color */
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: white !important;
-    background-color: #660000 !important;
+/* Navbar hover */
+.navbar-nav .nav-link:hover {
+  color: #660000;
 }
 
-/*Drop down menu color */
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-    background-color: #800000;
-    color: white;
+#main .nav-pills > li > a:hover {
+  background-color: #800000;
 }
 
-
-/* Sidebar hover */
-#TOC .nav > li > a:hover {
-    background-color: #800000 !important;
-    color: white !important;
+#main a:link {
+  color: #800000;
 }
 
-/* Sidebar active section */
-#TOC .nav > li.active > a {
-    background-color: #800000 !important;
-    color: white !important;
+/* visited link */
+#main a:visited {
+  color: #5a0000;
 }
 
-/* Sidebar active hover */
-#TOC .nav > li.active > a:hover {
-    background-color: #660000 !important;
-    color: white !important;
+/* mouse over link */
+#main a:hover {
+  color: #660000;
+}
+
+/* selected link */
+#main a:active {
+  color: #400000;
+}
+
+h1,h2,h3,h4,h5,h6,legend{
+    color: #800000;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+body {
+  font-size: 16px;
+}
+
+#nav-top span.glyphicon {
+  color: #800000;
 }
 
 #table-of-contents header{
-    color: #800000;
-    background-color:  #800000;
-}
-
-.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus {
-    z-index: 2;
-    color: white;
+    color:#ffffff;
     background-color: #800000;
-    border-color:#800000
 }
 
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #800000;
+    border-color: #800000;
+}
 
 a {
     color: #800000;
-    text-decoration: none
+    text-decoration: none;
 }
 
-
-
 a:hover, a:focus{
-    color:#800000
-    text-decoration: underline
+    color:#660000;
+    text-decoration: underline;
 }
 
 a:visited{
-    color:#800000
+    color:#5a0000;
 }
 
-/* Push the first heading lower on the page */
-h1 {
-  margin-top: 80px;
-  margin-bottom: 25px;
-  font-size: 42px;
+#sidebar {
+    color: #ffffff;
+    background: #800000;
 }
 
-/* Section headings */
-h2 {
-  margin-top: 45px;
-  margin-bottom: 20px;
-  font-size: 30px;
+#sidebar h2 {
+    color: #FFFFFF;
+    background-color: #660000;
 }
 
-h3 {
-  margin-top: 35px;
-  margin-bottom: 18px;
-  font-size: 24px;
+#sidebar a {
+    color: #FFFFFF;
 }
 
-/* Paragraph text */
-p {
-  margin-bottom: 20px;
-  line-height: 1.7;
-  font-size: 18px;
+#sidebar a:hover {
+    background-color: #5a0000;
+    color: #FFFFFF;
+}
+
+.navbar {
+    background-image: linear-gradient(120deg, #800000, #5a0000);
+}
+
+.nav-links li a {
+    color: #800000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #660000;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
+    background-color: #5a0000;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #ffffff;
+    background-color: #5a0000;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #800000;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    background-color: #800000;
+    color: #ffffff;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #800000;
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #800000;
 }

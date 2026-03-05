@@ -1,17 +1,23 @@
 
-
 # About Me
 
-I am a doctoral student in the Developmental Psychology program at the University of Chicago and an Institute of Education Sciences (IES) Fellow.
+<div style="display:flex; align-items:center; gap:40px;">
 
+<div style="flex:2;">
 
-<center>
+I am a doctoral student in the Developmental Psychology program at the University of Chicago and an Institute of Education Sciences (IES) Fellow. My research examines how socio-emotional, cognitive, and linguistic factors influence children’s mathematical thinking. 
 
-![](Carr_Dania.jpg){width=400px}
+</div>
 
-</center>
+<div style="flex:1; text-align:center;">
 
+![](Carr_Dania.jpg){width=100%}
 
+</div>
+
+</div>
+
+<br>
 
 I am a doctoral student in the Developmental Psychology program at the University of Chicago and an Institute of Education Sciences (IES) Fellow.
 
@@ -28,7 +34,61 @@ I am a doctoral student in the Developmental Psychology program at the Universit
 
 ### Professional Interests
 
- My research examines how socio-emotional, cognitive, and linguistic factors incluence children's mathematical thinking. I am interested in applying my research, data analysis, and data visualization skills to uncover patterns in educational data, generate actionable insights, and support evidence-based strategy and decision making.
+I love using quantitative and qualitative methods, statistical modeling, and data visualization to identify patterns in complex datasets and translate findings into clear, actionable insights. I am interested in applying these skills in applied settings and data-focused roles that support data-driven strategy and evidence-based decision-making in the education sector.
+
+<br>
+
+#### Technical Skills
+
+::: {.row}
+
+::: {.col-md-4 .no-indent}
+**Programming**
+
+- R
+- Python
+- Git/GitHub
+- SPSS
+- Qualtrics
+:::
+
+::: {.col-md-4 .no-indent}
+**Visualization:** 
+
+- ggplot2
+- Plotly
+- Tableau
+- Shiny
+- Interactive dashboards
+:::
+
+::: {.col-md-4 .no-indent}
+**Statistical Modeling**
+
+- Regression modeling
+- Hierarchical linear modeling
+- Mixed-effects models
+- Multivariate analysis
+- Bayesian inference
+- Dimensionality reduction (factor analysis, PCA)
+- Mediation (SEM) & moderation
+- Latent profile/class analysis
+- k-means clustering
+:::
+
+
+::: {.col-md-4 .no-indent}
+
+**Research Methods**
+
+- Experimental design
+- Mixed-method research
+- Survey and interview analysis
+:::
+:::
+
+<br>
+
 
 
 <br>
@@ -37,6 +97,12 @@ I am a doctoral student in the Developmental Psychology program at the Universit
 
 ### Personal Interests 
 
-I love playing pool, relaxing at the Chicago lakefront (especially during summer months), and hiking. I also love spending time with my husband and my dog. 
+I love snowboarding, going to the Chicago lakefront (especially during the summer), playing pool, and hiking. I also love spending time with my husband and my dog. 
 
-[will insert picture of husband and dog]
+<div style="text-align:center;">
+
+![](Ian_Whiskey.jpg){width=25%} ![](snowboard.jpg){width=35%}
+
+</div>
+
+

@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Dania Carr"
   right:
-    - text: 'Visualizations' 
+    - text: 'Visualization Projects' 
       menu:
         - text: 'Geospatial Visualization'
           href: Geospatial.html
