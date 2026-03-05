@@ -24,5 +24,5 @@ output:
     toc: yes
     toc_float:
       collapsed: false
-      css: style.css
+    css: style.css
  
