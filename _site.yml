@@ -6,15 +6,17 @@ navbar:
     - text: 'Visualizations' 
       menu:
         - text: 'Geospatial Visualization'
-          href: text.html
+          href: Geospatial.html
         - text: 'Tableau'
-          href: text2.html
+          href: Tableau.html
         - text: 'Shiny'
-          href: text3.html
+          href: Shiny.html
         - text: 'Plotly'
-          href: text4.html
+          href: Plotly.html
     - text: "Contact"
-      href: about.html
+      href: Contact.html
+    - icon: fa-github fa-lg
+      href: http://github.com/jmclip
 
 output: 
   html_document:
