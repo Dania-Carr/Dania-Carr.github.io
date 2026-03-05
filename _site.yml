@@ -1,7 +1,7 @@
 name: "Dania Carr"
 output_dir: "."
 navbar:
-  title: "Home"
+  title: "Dania Carr"
   right:
     - text: 'Visualizations' 
       menu:

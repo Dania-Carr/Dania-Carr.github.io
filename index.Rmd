@@ -1,14 +1,22 @@
 
 
-# About me
+# About Me
 
-## Dania Carr
+I am a doctoral student in the Developmental Psychology program at the University of Chicago and an Institute of Education Sciences (IES) Fellow.
 
-[will insert profile picture here]
+
+<center>
+
+![](Carr_Dania.jpg){width=400px}
+
+</center>
+
+
+
 
 ### Professional Interests
 
-I am a doctoral student in the Developmental Psychology program at the University of Chicago and an Institute of Education Sciences (IES) fellow. My research examines how socio-emotional, cognitive, and linguistic factors incluence children's mathematical thinking. I am interested in applying my research, data analysis, and data visualization skills to uncover patterns in educational data, generate actionable insights, and support evidence-based strategy and decision making.
+ My research examines how socio-emotional, cognitive, and linguistic factors incluence children's mathematical thinking. I am interested in applying my research, data analysis, and data visualization skills to uncover patterns in educational data, generate actionable insights, and support evidence-based strategy and decision making.
 
 ### Personal Interests 
 
