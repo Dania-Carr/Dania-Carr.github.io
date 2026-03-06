@@ -19,18 +19,6 @@ I am a doctoral student in the Developmental Psychology program at the Universit
 
 <br>
 
-I am a doctoral student in the Developmental Psychology program at the University of Chicago and an Institute of Education Sciences (IES) Fellow.
-
-
-<center>
-
-![](Carr_Dania.jpg){width=400px}
-
-</center>
-
-
-<br>
-
 
 ### Professional Interests
 
@@ -62,6 +50,16 @@ I love using quantitative and qualitative methods, statistical modeling, and dat
 - Interactive dashboards
 :::
 
+
+::: {.col-md-4 .no-indent}
+
+**Research Methods**
+
+- Experimental design
+- Mixed-method research
+- Survey and interview analysis
+:::
+
 ::: {.col-md-4 .no-indent}
 **Statistical Modeling**
 
@@ -74,16 +72,6 @@ I love using quantitative and qualitative methods, statistical modeling, and dat
 - Mediation (SEM) & moderation
 - Latent profile/class analysis
 - k-means clustering
-:::
-
-
-::: {.col-md-4 .no-indent}
-
-**Research Methods**
-
-- Experimental design
-- Mixed-method research
-- Survey and interview analysis
 :::
 :::
 
