@@ -62,7 +62,7 @@ I love using quantitative and qualitative methods, statistical modeling, and dat
 
 :::
 
-### Analytical Skills 
+#### Analytical Skills 
 
 I love using various statistical methods to find meaningful patterns in complex datasets. I've used classical statistical analysis for hypothesis testing as well as machine learning techniques for prediction and classification. 
 
