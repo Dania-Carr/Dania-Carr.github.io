@@ -1,12 +1,33 @@
 # Geospatial Visualization
 
+<br>
+
 ## Introduction 
 
+<br>
 
+**Research Question**: What is the relationship between mathematics performance and poverty across school districts in the United States?
 
-## Graph 
+<br>
 
+### Datasets Used 
 
+1. **Educational Opportunity Project at Stanford University**
+<br>
+
+- **Math achievement**: District-level average mathematics performance was collected from "accoutability testing" which is federally mandatory tests that students in grades 3-8 take each year in math and language arts. The federal law also requires states make the aggregated results of those tests public. Student performance is normalized by grade level, such that each district’s average score is expressed relative to the national average for that grade. 
+
+<br>
+
+- **State poverty**: District-level poverty information about the percentage of households below the federal poverty line was used as an indicator of poverty. Data used to calculate the percentage of households below the federal poverty line was collected from Census tract-level data on residents from the U.S. Census Bureau’s 1970 to 2020 decennial censuses and American Community Survey (ACS) five-year aggregate estimates from 2005-2009 through 2018-2022.
+
+2. **National Center for Education Statistics (NCES)** 
+
+- **Spatial boundaries**: Spatial boundaries of United States school districts. These spatial data are merged with the Stanford datasets using district identification codes to enable geographic visualization.
+
+<br>
+
+## Maps
 
 ```{r, message = F, echo = F, warning = F}
 # load packages
@@ -87,7 +108,7 @@ district_id <- crosswalk %>%
 test_cov_id <- left_join(x = test_long, y = district_id, by = c("sedalea"))
 
 #Merging Spatial data
-dist <- st_read(dsn = here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp"))
+dist <- st_read(dsn = here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp"), quite = TRUE)
 
 # make SEDA leaid a 7-digit string
 test_cov_id2 <- test_cov_id %>%
@@ -152,7 +173,7 @@ ggplot() +
                        values = cols,
                        na.value = "grey90",
                        breaks = c("Bottom 5%","Below average","Average","Above average","Top 5%")) +
-  labs(title = "Average Math Achievement by School District",
+  labs(title = "Average Math Achievement by School District in High Poverty States",
        subtitle = "School district math achievement (binned relative to national average)",
        caption = "Source: Stanford Educational Opportunity Project (SEDA v5.0) and NCES EDGE district boundaries (SY 2023–24).") +
   theme(legend.title = element_text(face = "bold", size = 10),
@@ -162,6 +183,38 @@ ggplot() +
              plot.caption = element_text(size = 7))
 ```
 
+
+```{r}
+
+#Plot
+ggplot() +
+  geom_sf(data = districts_inset2, aes(fill = mth_bin), color = NA) +
+ geom_sf(data = subset(state_pov, pov_state == "Low poverty"),fill = NA,color = "black", linewidth = 0.8) +
+  geom_sf(data = states_outline48, fill = NA, color = "grey60", linewidth = 0.1) +
+  coord_sf(
+    xlim = c(bb["xmin"], bb["xmax"]),
+    ylim = c(bb["ymin"], bb["ymax"]),
+    expand = FALSE, datum = NA) +
+     scale_fill_manual("Math Performance",
+                       values = cols,
+                       na.value = "grey90",
+                       breaks = c("Bottom 5%","Below average","Average","Above average","Top 5%")) +
+  labs(title = "Average Math Achievement by School District in Low Poverty States",
+       subtitle = "School district math achievement (binned relative to national average)",
+       caption = "Source: Stanford Educational Opportunity Project (SEDA v5.0) and NCES EDGE district boundaries (SY 2023–24).") +
+  theme(legend.title = element_text(face = "bold", size = 10),
+             legend.text  = element_text(size = 9),
+             plot.title   = element_text(face = "bold", size = 14),
+             plot.subtitle = element_text(size = 10),
+             plot.caption = element_text(size = 7))
+```
+
+<br>
+
 ## Insights
 
-From homework 3
+Overall, states in the western and southern regions of the United States appear to perform worse in mathematics than states along the East Coast and in the Midwest. One possible explanation is that states with larger populations may have more crowded schools, which could negatively affect student learning and mathematics performance. It is also notable that some states, such as Montana, contain districts that fall both within the top 5% and the bottom 5% of performance. This raises interesting questions about what factors differ across districts within the same state and how those differences might contribute to variation in mathematics achievement.
+
+Examining the relationship between math performance and poverty levels reveals a clear pattern: states with higher levels of poverty tend to have lower mathematics performance compared to states with lower poverty levels. However, there are also notable exceptions to this trend. For example, California appears to have relatively low mathematics performance despite not being among the states with the highest poverty levels. This pattern may reflect state-specific educational policies or structural differences in how mathematics instruction is implemented.
+
+Taken together, these patterns suggest that state-level policies may play an important role in shaping student academic outcomes, even after accounting for differences in economic resources across districts. They also point to the potential influence of population density on educational outcomes. These findings raise important policy questions, such as whether increasing school capacity in densely populated areas or revising state-level educational policies could help improve mathematics performance across the country.
