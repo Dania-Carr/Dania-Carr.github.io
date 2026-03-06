@@ -2,11 +2,8 @@
 
 <br>
 
-## Introduction 
 
-<br>
-
-**Research Question**: What is the relationship between mathematics performance and poverty across school districts in the United States?
+####**Research Question**: What is the relationship between mathematics performance and poverty across school districts in the United States?
 
 <br>
 
@@ -17,9 +14,9 @@
 
 - **Math achievement**: District-level average mathematics performance was collected from "accoutability testing" which is federally mandatory tests that students in grades 3-8 take each year in math and language arts. The federal law also requires states make the aggregated results of those tests public. Student performance is normalized by grade level, such that each district’s average score is expressed relative to the national average for that grade. 
 
-<br>
-
 - **State poverty**: District-level poverty information about the percentage of households below the federal poverty line was used as an indicator of poverty. Data used to calculate the percentage of households below the federal poverty line was collected from Census tract-level data on residents from the U.S. Census Bureau’s 1970 to 2020 decennial censuses and American Community Survey (ACS) five-year aggregate estimates from 2005-2009 through 2018-2022.
+
+<br>
 
 2. **National Center for Education Statistics (NCES)** 
 
@@ -108,7 +105,7 @@ district_id <- crosswalk %>%
 test_cov_id <- left_join(x = test_long, y = district_id, by = c("sedalea"))
 
 #Merging Spatial data
-dist <- suppressMessages(st_read(dsn = here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp")))
+dist <- invisible(st_read(dsn = here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp")))
 
 # make SEDA leaid a 7-digit string
 test_cov_id2 <- test_cov_id %>%
@@ -140,20 +137,16 @@ bb <- st_bbox(states_inset)
 
 districts_inset2 <- st_crop(districts_inset, bb)
 
-# Including AK and HI
-states_outline50 <- states_inset %>%
-  st_crop(bb)
-
-# Drop AK + HI from the outline layer only because it wasn't mapping correctly
+# Drop AK + HI because it wasn't mapping correctly
 states_outline48 <- states_inset %>%
  filter(!state_abbv %in% c("AK", "HI")) %>%
   st_crop(bb)
 
 #Add poverty data to states
-states_outline50_pov <- left_join(x = states_outline50, y = cov_state, by = c("state_abbv" = "stateabb"))
+states_outline48_pov <- left_join(x = states_outline48, y = cov_state, by = c("state_abbv" = "stateabb"))
 
 # Creating points for poverty instead
-state_pov <- states_outline50_pov %>%
+state_pov <- states_outline48_pov %>%
   filter(!is.na(pov_state))
 
 #Fixing color palette
@@ -184,7 +177,7 @@ ggplot() +
 ```
 
 
-```{r}
+```{r, message = F, echo = F, warning = F}
 
 #Plot
 ggplot() +
