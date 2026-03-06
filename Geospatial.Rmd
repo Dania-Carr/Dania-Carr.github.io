@@ -2,15 +2,164 @@
 
 ## Introduction 
 
-From homework 3 with improvements
+
 
 ## Graph 
 
-From homework 3 with improvements
+
 
 ```{r, message = F, echo = F, warning = F}
+# load packages
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+library(colorspace)
+library(here)
+library(sf)
+library(dplyr)
+library(ggplot2)
+library(urbnmapr)
+library(usmap)
+library(RColorBrewer)
+
+# more efficient to generate sf maps
+if (!identical(getOption("bitmapType"), "cairo") && isTRUE(capabilities()[["cairo"]])) {
+  options(bitmapType = "cairo")
+}
+
+# set default theme for ggplot2
+ggplot2::theme_set(ggplot2::theme_minimal(base_size = 16))
+# set default figure parameters for knitr
+knitr::opts_chunk$set(
+  fig.width = 8, fig.asp = 0.618,
+  fig.retina = 2, dpi = 150
+)
+
+#Loading SEDA data
+test_dist <- read_csv(file = here("Data", "seda_geodist_long_gcs_5.0_updated_20240319.csv"))
+cov_dist <- read_csv(file = here("Data", "seda_cov_geodist_pool_5.0_updated_20240319.csv"))
+crosswalk <- read_csv(file = here("Data", "seda_crosswalk_5.0_updated_20240319.csv"))
+
+#Merging covariate and achievement data 
+test_cov_dist <- left_join(x = test_dist, y = cov_dist, by = c("sedalea", "stateabb"))
+
+#Covariate data with percent of households below the poverty line
+
+#Average poverty by state
+cov_state <- test_cov_dist %>%
+    group_by(stateabb) %>%
+    summarize(pov_per = mean(povertyavgall, na.rm = TRUE), .groups = "drop") 
+
+#Using quantiles for high, low, and average 
+p25 <- quantile(cov_state$pov_per, 0.25, na.rm = TRUE)
+p75 <- quantile(cov_state$pov_per, 0.75, na.rm = TRUE)
+
+#Adding quantiles to data
+cov_state <-  cov_state %>%
+    mutate(pov_state = case_when(pov_per <= p25 ~ "Low poverty",
+                                 pov_per >= p75 ~ "High poverty",
+                                  TRUE ~ "Average poverty"),
+            pov_state = factor(pov_state, levels = c("Low poverty", "Average poverty", "High poverty")))
 
 
+#Average math test data to be district level 
+test_long <- test_dist %>%
+  group_by(sedalea, as.factor(subject)) %>%
+  summarise(score = mean(gcs_mn_all, na.rm = TRUE), 
+            stateabb = unique(stateabb),
+            .groups = "drop") %>%
+    pivot_wider(names_from  = 'as.factor(subject)', values_from = score) 
+
+#Changing district math score to be centered at the median 
+test_long <- test_long %>%
+  mutate(mth_bin = cut(mth, breaks = quantile(mth, probs = c(0, .05, .35, .65, .95, 1),na.rm = TRUE),
+                       labels = c("Bottom 5%","Below average","Average","Above average","Top 5%"),
+                       include.lowest = TRUE))
+
+#Merging test and poverty data
+test_long <- left_join(x = test_long, y = cov_state, by = "stateabb")
+
+#Creating crosswalk on the district level
+district_id <- crosswalk %>%
+    distinct(sedalea, leaid, sedaleaname)
+
+#Merging SEDA datasets with district IDs
+test_cov_id <- left_join(x = test_long, y = district_id, by = c("sedalea"))
+
+#Merging Spatial data
+dist <- st_read(dsn = here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp"))
+
+# make SEDA leaid a 7-digit string
+test_cov_id2 <- test_cov_id %>%
+  mutate(leaid = str_pad(as.character(leaid), 7, pad = "0"))
+
+# join using GEOID
+test_dist_all <- dist %>%
+  left_join(test_cov_id2, by = c("GEOID" = "leaid"))
+
+# Get urbnmapr states
+states_sf <- get_urbn_map("states", sf = TRUE)
+sf_use_s2(FALSE) # not using the s2 spherical geometry package to be able to move Hawaii and Alaska
+
+#Inset transform districts
+districts_inset <- test_dist_all %>%
+  st_transform(4326) %>% # coordinates are latitude and longitude.
+  st_make_valid() %>% # fix invalid geometries
+  st_buffer(0) %>%  # rebuild boundaries
+  st_simplify(dTolerance = 0.0005, preserveTopology = TRUE) %>%  # Remove vertices that are super close together
+  usmap_transform() #Transform so that Alaska and Hawaii are on the bottom
+
+#Inset transform states 
+states_inset <- states_sf %>%
+  st_transform(4326) %>%
+  usmap_transform()
+
+#Creating an appropriate box for the map
+bb <- st_bbox(states_inset)
+
+districts_inset2 <- st_crop(districts_inset, bb)
+
+# Including AK and HI
+states_outline50 <- states_inset %>%
+  st_crop(bb)
+
+# Drop AK + HI from the outline layer only because it wasn't mapping correctly
+states_outline48 <- states_inset %>%
+ filter(!state_abbv %in% c("AK", "HI")) %>%
+  st_crop(bb)
+
+#Add poverty data to states
+states_outline50_pov <- left_join(x = states_outline50, y = cov_state, by = c("state_abbv" = "stateabb"))
+
+# Creating points for poverty instead
+state_pov <- states_outline50_pov %>%
+  filter(!is.na(pov_state))
+
+#Fixing color palette
+cols <- brewer.pal(5, "RdYlBu")
+cols[3] <- "#FEE08B"
+
+#Plot
+ggplot() +
+  geom_sf(data = districts_inset2, aes(fill = mth_bin), color = NA) +
+ geom_sf(data = subset(state_pov, pov_state == "High poverty"),fill = NA,color = "black", linewidth = 0.8) +
+  geom_sf(data = states_outline48, fill = NA, color = "grey60", linewidth = 0.1) +
+  coord_sf(
+    xlim = c(bb["xmin"], bb["xmax"]),
+    ylim = c(bb["ymin"], bb["ymax"]),
+    expand = FALSE, datum = NA) +
+     scale_fill_manual("Math Performance",
+                       values = cols,
+                       na.value = "grey90",
+                       breaks = c("Bottom 5%","Below average","Average","Above average","Top 5%")) +
+  labs(title = "Average Math Achievement by School District",
+       subtitle = "School district math achievement (binned relative to national average)",
+       caption = "Source: Stanford Educational Opportunity Project (SEDA v5.0) and NCES EDGE district boundaries (SY 2023–24).") +
+  theme(legend.title = element_text(face = "bold", size = 10),
+             legend.text  = element_text(size = 9),
+             plot.title   = element_text(face = "bold", size = 14),
+             plot.subtitle = element_text(size = 10),
+             plot.caption = element_text(size = 7))
 ```
 
 ## Insights
