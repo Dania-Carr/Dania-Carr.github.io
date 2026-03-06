@@ -3,7 +3,7 @@
 <br>
 
 
-####**Research Question**: What is the relationship between mathematics performance and poverty across school districts in the United States?
+#### **Research Question**: What is the relationship between mathematics performance and poverty across school districts in the United States?
 
 <br>
 
@@ -24,7 +24,7 @@
 
 <br>
 
-## Maps
+### Maps
 
 ```{r, message = F, echo = F, warning = F}
 # load packages
@@ -105,7 +105,8 @@ district_id <- crosswalk %>%
 test_cov_id <- left_join(x = test_long, y = district_id, by = c("sedalea"))
 
 #Merging Spatial data
-dist <- invisible(st_read(dsn = here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp")))
+dist <- st_read(here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp"), quiet = TRUE) %>%
+  filter(!STATEFP %in% c("02", "15"))
 
 # make SEDA leaid a 7-digit string
 test_cov_id2 <- test_cov_id %>%
@@ -152,7 +153,10 @@ state_pov <- states_outline48_pov %>%
 #Fixing color palette
 cols <- brewer.pal(5, "RdYlBu")
 cols[3] <- "#FEE08B"
+```
 
+
+```{r, , echo=FALSE, message=FALSE, warning=FALSE}
 #Plot
 ggplot() +
   geom_sf(data = districts_inset2, aes(fill = mth_bin), color = NA) +
