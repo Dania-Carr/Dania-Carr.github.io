@@ -108,7 +108,7 @@ district_id <- crosswalk %>%
 test_cov_id <- left_join(x = test_long, y = district_id, by = c("sedalea"))
 
 #Merging Spatial data
-dist <- st_read(dsn = here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp"), quite = TRUE)
+dist <- suppressMessages(st_read(dsn = here("Data", "EDGE_SCHOOLDISTRICT_TL24_SY2324.shp")))
 
 # make SEDA leaid a 7-digit string
 test_cov_id2 <- test_cov_id %>%
