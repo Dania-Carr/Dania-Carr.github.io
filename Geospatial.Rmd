@@ -3,7 +3,7 @@
 <br>
 
 
-#### **Research Question**: What is the relationship between mathematics performance and poverty across school districts in the United States?
+#### **Research Question: What is the relationship between mathematics performance and poverty across school districts in the United States?**
 
 <br>
 
@@ -208,7 +208,7 @@ ggplot() +
 
 <br>
 
-## Insights
+### Insights
 
 Overall, states in the western and southern regions of the United States appear to perform worse in mathematics than states along the East Coast and in the Midwest. One possible explanation is that states with larger populations may have more crowded schools, which could negatively affect student learning and mathematics performance. It is also notable that some states, such as Montana, contain districts that fall both within the top 5% and the bottom 5% of performance. This raises interesting questions about what factors differ across districts within the same state and how those differences might contribute to variation in mathematics achievement.
 
