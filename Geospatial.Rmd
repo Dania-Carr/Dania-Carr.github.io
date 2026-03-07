@@ -7,7 +7,7 @@
 
 <br>
 
-### Datasets Used 
+### Data Description 
 
 1. **Educational Opportunity Project at Stanford University**
 <br>
@@ -170,7 +170,7 @@ ggplot() +
                        values = cols,
                        na.value = "grey90",
                        breaks = c("Bottom 5%","Below average","Average","Above average","Top 5%")) +
-  labs(title = "Average Math Achievement by School District in High Poverty States",
+  labs(title = "Average Math Achievement in High Poverty States",
        subtitle = "School district math achievement (binned relative to national average)",
        caption = "Source: Stanford Educational Opportunity Project (SEDA v5.0) and NCES EDGE district boundaries (SY 2023–24).") +
   theme(legend.title = element_text(face = "bold", size = 10),
@@ -196,7 +196,7 @@ ggplot() +
                        values = cols,
                        na.value = "grey90",
                        breaks = c("Bottom 5%","Below average","Average","Above average","Top 5%")) +
-  labs(title = "Average Math Achievement by School District in Low Poverty States",
+  labs(title = "Average Math Achievement in Low Poverty States",
        subtitle = "School district math achievement (binned relative to national average)",
        caption = "Source: Stanford Educational Opportunity Project (SEDA v5.0) and NCES EDGE district boundaries (SY 2023–24).") +
   theme(legend.title = element_text(face = "bold", size = 10),

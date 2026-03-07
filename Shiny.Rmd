@@ -1,13 +1,36 @@
 # Shiny
 
-## Introduction 
+<br>
 
-From homework but tweaking data to be a little more interesting
+#### **Research Question: How does U.S. math performance compare to other countries in the context of key development indicators?**
 
-## Dashboard (will change to my own)
-(will change to my own)
-<iframe src="https://jclip.shinyapps.io/baby-names/" style="border: 1px solid #AAA; width: 800px; height: 760px"></iframe>
+<br>
 
-## Insights
-Adding
+### Data Description
+
+1. **Gapminder**
+<br>
+
+- **Math achievement**: The average score on the international TIMSS test for children in 4th and 8th grade. 
+
+- **Life expectancy**: The number of years a newborn infant would live if the current mortality rates at different ages were to stay the same throughout its life.
+
+- **Average Income**: Inflation and price adjusted average daily income per person per day. It was calculated using the mean daily household per capita income or consumption expenditure from the world bank survey and is expressed in 2021 constant international dollars (PPP).
+
+- **Expenditure per Student**: The average general government expenditure (current, capital, and transfers) per student in primary school. It is expressed as a percentage of GDP per capita.
+
+- **Country**: Only countries with math achievement data for both 4th and 8th grade were included.
+
+<br>
+### Dashboard 
+
+<iframe src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" style="border: 1px solid #AAA; width: 800px; height: 760px"></iframe>
+
+<br>
+
+### Insights
+
+Overall, mathematics achievement among 8th-grade students in the United States is lower than among 4th-grade students. Compared to other countries, the United States performs better in mathematics than some countries but worse than others. Notably, countries such as Japan and Singapore outperform the United States in mathematics at both the 4th- and 8th-grade levels. These countries also have higher life expectancy, suggesting that broader indicators of population health and quality of life may be associated with stronger educational outcomes.
+
+It is important to note that the data used in this dashboard only extend through 2016, prior to the COVID-19 pandemic, which significantly disrupted schooling and negatively affected mathematics learning in the United States. As a result, it is possible that more countries may currently outperform the United States in mathematics than this dashboard reflects.
 
