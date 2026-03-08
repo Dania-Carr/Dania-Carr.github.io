@@ -338,16 +338,13 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="Geospatial.html">Geospatial Visualization</a>
+      <a href="Geospatial.html">Geospatial using ggplot</a>
     </li>
     <li>
       <a href="Tableau.html">Tableau</a>
     </li>
     <li>
-      <a href="Shiny.html">Shiny</a>
-    </li>
-    <li>
-      <a href="Plotly.html">Plotly</a>
+      <a href="Shiny.html">Shiny with Plotly</a>
     </li>
   </ul>
 </li>
@@ -403,7 +400,11 @@ line was used as an indicator of poverty. Data used to calculate the
 percentage of households below the federal poverty line was collected
 from Census tract-level data on residents from the U.S. Census Bureau’s
 1970 to 2020 decennial censuses and American Community Survey (ACS)
-five-year aggregate estimates from 2005-2009 through 2018-2022.</p></li>
+five-year aggregate estimates from 2005-2009 through 2018-2022. State
+poverty levels were calculated by averaging the percentage of households
+below the poverty line across districts within each state. States at or
+above the 75th percentile of this distribution were classified as high
+poverty.</p></li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
 <li>National Center for Education Statistics (NCES)</li>
@@ -416,10 +417,9 @@ visualization.</li>
 </ul>
 <p><br></p>
 </div>
-<div id="maps" class="section level3">
-<h3>Maps</h3>
+<div id="map" class="section level3">
+<h3>Map</h3>
 <p><img src="Geospatial_files/figure-html/unnamed-chunk-2-1.png" width="1200" /></p>
-<p><img src="Geospatial_files/figure-html/unnamed-chunk-3-1.png" width="1200" /></p>
 <p><br></p>
 </div>
 <div id="insights" class="section level3">
@@ -436,13 +436,12 @@ the same state and how those differences might contribute to variation
 in mathematics achievement.</p>
 <p>Examining the relationship between math performance and poverty
 levels reveals a clear pattern: states with higher levels of poverty
-tend to have lower mathematics performance compared to states with lower
-poverty levels. However, there are also notable exceptions to this
-trend. For example, California appears to have relatively low
-mathematics performance despite not being among the states with the
-highest poverty levels. This pattern may reflect state-specific
-educational policies or structural differences in how mathematics
-instruction is implemented.</p>
+tend to have lower mathematics performance. However, there are also
+notable exceptions to this trend. For example, California appears to
+have relatively low mathematics performance despite not being among the
+states with the highest poverty levels. This pattern may reflect
+state-specific educational policies or structural differences in how
+mathematics instruction is implemented.</p>
 <p>Taken together, these patterns suggest that state-level policies may
 play an important role in shaping student academic outcomes, even after
 accounting for differences in economic resources across districts. They

@@ -1,4 +1,4 @@
-# Shiny
+# Shiny with Plotly
 
 <br>
 
@@ -31,7 +31,9 @@ Gapminder dataset
 
 ### Insights
 
-Overall, mathematics achievement among 8th-grade students in the United States is lower than among 4th-grade students. The United States performs better in mathematics than some countries but worse than others. Notably, countries such as Japan and Singapore outperform the United States in mathematics at both the 4th- and 8th-grade levels. These countries also have higher life expectancy, suggesting that broader indicators of population health and quality of life may be associated with stronger educational outcomes.
+Overall, between 2000 and 2016, mathematics achievement among 8th-grade students in the United States was higher than among 4th-grade students. In addition, 4th-grade achievement was not improving at the same rate as 8th-grade achievement. In fact, there were no gains in 4th-grade mathematics performance between 2011 and 2015. It is important to note that the data used in this dashboard extend only through 2016, prior to the COVID-19 pandemic, which significantly disrupted schooling and negatively affected mathematics learning in the United States. However, these earlier trends suggest that performance among younger students may have already been stagnating before the pandemic, indicating that factors beyond COVID-19 may be contributing to declining mathematics outcomes for younger students.
 
-It is important to note that the data used in this dashboard only extend through 2016, prior to the COVID-19 pandemic, which significantly disrupted schooling and negatively affected mathematics learning in the United States. As a result, it is possible that more countries may currently outperform the United States in mathematics than this dashboard reflects.
+During this same period, the United States performed better in mathematics than some countries but worse than others. Notably, countries such as Japan and Singapore consistently outperformed the United States in mathematics at both the 4th- and 8th-grade levels. These countries also have higher life expectancy, suggesting that broader indicators of population health and quality of life may be associated with stronger educational outcomes.
+
+
 

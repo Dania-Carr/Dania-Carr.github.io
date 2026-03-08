@@ -5,14 +5,12 @@ navbar:
   right:
     - text: 'Visualization Projects' 
       menu:
-        - text: 'Geospatial Visualization'
+        - text: 'Geospatial using ggplot'
           href: Geospatial.html
         - text: 'Tableau'
           href: Tableau.html
-        - text: 'Shiny'
+        - text: 'Shiny with Plotly'
           href: Shiny.html
-        - text: 'Plotly'
-          href: Plotly.html
     - text: "Contact"
       href: Contact.html
     - icon: fa-github fa-lg
