@@ -18,8 +18,8 @@
 <br>
 
 ## Dashboard
-<iframe src="https://public.tableau.com/views/MathvsELAAchievementinUSATableau/Dashboard1?:embed=y&:showVizHome=no"
- width="1000px" height="900px"></iframe>
+<iframe src="https://public.tableau.com/app/profile/dania.carr/viz/MathvsELAAchievementinUSATableau/Dashboard1?:showVizHome=no&:embed=true"
+ width="1000px" height="800px"></iframe>
 
 <br>
 
