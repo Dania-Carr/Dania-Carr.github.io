@@ -25,7 +25,7 @@ Gapminder dataset
 
 ### Dashboard 
 
-<iframe src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" style="border: 1px solid #AAA; width: 1000px; height: 760px"></iframe>
+<iframe src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" style="border: 1px solid #AAA; width: 1000px; height: 900px"></iframe>
 
 <br>
 
