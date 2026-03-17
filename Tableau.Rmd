@@ -8,7 +8,7 @@
 
 ## Data Description
 
-1. Educational Opportunity Project at Stanford University
+1. **Educational Opportunity Project at Stanford University**
 <br>
 
 - **Math and ELA achievement**: District-level average mathematics and English Language Arts (ELA) performance was collected from "accoutability testing" which is federally mandatory tests that students in grades 3-8 take each year in math and language arts. The federal law also requires states make the aggregated results of those tests public, which includes aggregated scores by race. Student performance is normalized by grade level, such that each district’s average score is expressed relative to the national average for that grade. District-level scores were aggregated to the state level and standardized across states. Scores that were one standard deviation above the mean were categorized as high performance and scores that were one standard deviation below the mean were categorized as low performance. 
@@ -18,15 +18,17 @@
 <br>
 
 ## Dashboard
-<iframe src="https://public.tableau.com/views/MathvsELAAchievementinUSATableau/Dashboard1?:embed=y&:showVizHome=no"
- width="1000px" height="800px"></iframe>
-
-<br>
+<div style="width:100%; height:90vh;">
+  <iframe 
+    src="https://public.tableau.com/views/MathvsELAAchievementinUSATableau/Dashboard1?:embed=y&:showVizHome=no" 
+    style="width:100%; height:100%; border:none;">
+  </iframe>
+</div>
 
 ## Insights
 
-Across states, White and Asian students consistently outperform other racial groups in both mathematics and English language arts (ELA), highlighting persistent racial disparities in academic performance in the United States. States with a higher percentage of students attending suburban school districts tend to perform better overall in both subjects, which may reflect differences in access to educational and socioeconomic resources. However, there are notable exceptions. For example, Minnesota shows high performance in mathematics even though most students attend rural districts. Examining such cases may help identify policies or contextual factors that support strong academic outcomes across different settings.
+Across states, White and Asian students consistently outperform other racial groups in both mathematics and English language arts (ELA), highlighting persistent racial disparities in academic performance in the United States. States with a higher percentage of students attending suburban school districts tend to perform better overall in both subjects, which may reflect differences in access to educational and socioeconomic resources. **However, there are notable exceptions. For example, Minnesota shows high performance in mathematics even though most students attend rural districts. Examining such cases may help identify policies or contextual factors that support strong academic outcomes across different settings.**
 
-Overall, state performance levels in mathematics and ELA are generally similar, with most states performing at comparable levels in both subjects. However, some states diverge from this pattern. For instance, California performs relatively low in mathematics but average in ELA, while Minnesota performs relatively high in mathematics but average in ELA. Further investigation into state-level policies or educational practices may help explain these differences.
+Overall, state performance levels in mathematics and ELA are generally similar, with most states performing at comparable levels in both subjects. However, some states diverge from this pattern. For instance, California performs relatively low in mathematics but average in ELA, while Minnesota performs relatively high in mathematics but average in ELA. **Further investigation into state-level policies or educational practices may help explain these differences.**
 
 

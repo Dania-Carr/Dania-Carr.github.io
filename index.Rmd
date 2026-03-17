@@ -30,43 +30,32 @@ I am passionate about using quantitative and qualitative research methods, stati
 
 <br>
 
-#### Technical Skills
+## Technical Skills
 
-::: {.row}
-
-::: {.col-md-4 .no-indent}
-**Programming**
+### Programming
+![](Programming_Icon.png){width=12%}
 
 - R
 - Python
 - Git/GitHub
 - SPSS
 - Qualtrics
-:::
 
-::: {.col-md-4 .no-indent}
-**Visualization:** 
+### Visualization
+![](Visualization_Icon.png){width=12%}
 
 - ggplot2
 - Plotly
 - Tableau
 - Shiny
 - Interactive dashboards
-:::
 
-
-::: {.col-md-4 .no-indent}
-
-**Research Methods**
+### Research Methods
+![](Research_Icon.png){width=12%}
 
 - Experimental design
 - Mixed-method research
 - Survey and interview analysis
-:::
-
-:::
-
-<br>
 
 #### Analytical Skills 
 
@@ -98,10 +87,13 @@ I love using various statistical methods to find meaningful patterns in complex 
 
 I enjoy snowboarding, going to the Chicago lakefront (especially during the summer), playing pool, and hiking. I also enjoy spending time with my husband and my dog. 
 
-<div style="text-align:center;">
-
-![](Ian_Whiskey.jpg){width=25%} ![](snowboard.jpg){width=35%}
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+  <img src="Ian_Whiskey.jpg" style="width:25%;">
+  <img src="snowboard.jpg" style="width:35%;">
 
 </div>
 
 
+### Contact
+
+**Email:** <danias@uchicago.edu>  

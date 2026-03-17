@@ -8,7 +8,7 @@
 
 ### Data Description
 
-Gapminder dataset
+**Gapminder dataset**
 <br>
 
 - **Math achievement**: The average score on the international TIMSS test for children in 4th and 8th grade. 
@@ -25,15 +25,20 @@ Gapminder dataset
 
 ### Dashboard 
 
-<iframe src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" style="border: 1px solid #AAA; width: 1000px; height: 800px"></iframe>
+<div style="width:100%; height:100vh; overflow:hidden;">
+  <iframe 
+    src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" 
+    style="width:100%; height:100%; border:none;">
+  </iframe>
+</div>
 
-<br>
+
 
 ### Insights
 
-Overall, between 2000 and 2016, mathematics achievement among 4th-grade students in the United States was higher than among 8th-grade students. In addition, 4th-grade achievement was not improving at the same rate as 8th-grade achievement. In fact, there were no gains in 4th-grade mathematics performance between 2011 and 2015. It is important to note that the data used in this dashboard extend only through 2016, prior to the COVID-19 pandemic, which significantly disrupted schooling and negatively affected mathematics learning in the United States. However, these earlier trends suggest that math performance may have already been stagnating before the pandemic, indicating that factors beyond COVID-19 may be contributing to declining mathematics outcomes.
+Overall, between 2000 and 2016, mathematics achievement among 4th-grade students in the United States was higher than among 8th-grade students. In addition, 4th-grade achievement was not improving at the same rate as 8th-grade achievement. In fact, there were no gains in 4th-grade mathematics performance between 2011 and 2015. It is important to note that the data used in this dashboard extend only through 2016, prior to the COVID-19 pandemic, which significantly disrupted schooling and negatively affected mathematics learning in the United States. **However, these earlier trends suggest that math performance may have already been stagnating before the pandemic, indicating that factors beyond COVID-19 may be contributing to declining mathematics outcomes.**
 
-During this same period, the United States performed better in mathematics than some countries but worse than others. Notably, countries such as Japan and Singapore consistently outperformed the United States in mathematics at both the 4th- and 8th-grade levels. These countries also have higher life expectancy, suggesting that broader indicators of population health and quality of life may be associated with stronger educational outcomes.
+During this same period, the United States performed better in mathematics than some countries but worse than others. Notably, countries such as Japan and Singapore consistently outperformed the United States in mathematics at both the 4th- and 8th-grade levels. **These countries also have higher life expectancy, suggesting that broader indicators of population health and quality of life may be associated with stronger educational outcomes.**
 
 
 

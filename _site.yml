@@ -11,10 +11,10 @@ navbar:
           href: Tableau.html
         - text: 'Shiny with Plotly'
           href: Shiny.html
-    - text: "Contact"
-      href: Contact.html
     - icon: fa-github fa-lg
       href: http://github.com/Dania-Carr
+    - icon: linkedin
+      href: https://www.linkedin.com/in/dania-carr-64269419b
 
 output:
   html_document:
