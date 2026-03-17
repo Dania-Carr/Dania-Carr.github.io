@@ -160,3 +160,8 @@ a:visited{
     outline: 0;
     background-color: #800000;
 }
+
+.container {
+  max-width: 100% !important;
+  width: 100% !important;
+}

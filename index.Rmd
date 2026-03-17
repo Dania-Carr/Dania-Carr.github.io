@@ -30,10 +30,9 @@ I am passionate about using quantitative and qualitative research methods, stati
 
 <br>
 
-## Technical Skills
+### Technical Skills
 
-### Programming
-![](Programming_Icon.png){width=12%}
+#### Programming <img src="Programming_Icon.png" width="40" style="vertical-align: middle; margin-left: 8px;">
 
 - R
 - Python
@@ -41,8 +40,7 @@ I am passionate about using quantitative and qualitative research methods, stati
 - SPSS
 - Qualtrics
 
-### Visualization
-![](Visualization_Icon.png){width=12%}
+#### Visualization <img src="Visualization_Icon.png" width="40" style="vertical-align: middle; margin-left: 8px;">
 
 - ggplot2
 - Plotly
@@ -50,8 +48,7 @@ I am passionate about using quantitative and qualitative research methods, stati
 - Shiny
 - Interactive dashboards
 
-### Research Methods
-![](Research_Icon.png){width=12%}
+#### Research Methods <img src="Research_Icon.png" width="40" style="vertical-align: middle; margin-left: 8px;">
 
 - Experimental design
 - Mixed-method research
@@ -87,13 +84,15 @@ I love using various statistical methods to find meaningful patterns in complex 
 
 I enjoy snowboarding, going to the Chicago lakefront (especially during the summer), playing pool, and hiking. I also enjoy spending time with my husband and my dog. 
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-  <img src="Ian_Whiskey.jpg" style="width:25%;">
-  <img src="snowboard.jpg" style="width:35%;">
-
+<div style="text-align: center;">
+  <div style="display: inline-flex; align-items: center; gap: 20px;">
+    <img src="Ian_Whiskey.jpg" style="width:25%;">
+    <img src="snowboard.jpg" style="width:35%;">
+  </div>
 </div>
 
+<br>
 
-### Contact
+### Contact Information
 
 **Email:** <danias@uchicago.edu>  
