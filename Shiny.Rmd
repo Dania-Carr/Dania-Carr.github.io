@@ -25,12 +25,11 @@
 
 ### Dashboard 
 
-<div style="width:100vw; height:1000px; overflow:hidden;">
-  <iframe 
-    src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" 
-    style="width:100%; height:100%; border:none;">
-  </iframe>
-</div>
+<br>
+
+<iframe src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" style="border: 1px solid #AAA; width: 1000px; height: 700px"></iframe>
+
+<br>
 
 
 

@@ -54,11 +54,11 @@ I am passionate about using quantitative and qualitative research methods, stati
 - Mixed-method research
 - Survey and interview analysis
 
+<br>
+
 #### Analytical Skills 
 
 I love using various statistical methods to find meaningful patterns in complex datasets. I've used classical statistical analysis for hypothesis testing as well as machine learning techniques for prediction and classification. 
-
-<br>
 
 **Statistical Modeling**
 
@@ -84,12 +84,12 @@ I love using various statistical methods to find meaningful patterns in complex 
 
 I enjoy snowboarding, going to the Chicago lakefront (especially during the summer), playing pool, and hiking. I also enjoy spending time with my husband and my dog. 
 
-<div style="text-align: center;">
-  <div style="display: inline-flex; align-items: center; gap: 20px;">
-    <img src="Ian_Whiskey.jpg" style="width:25%;">
-    <img src="snowboard.jpg" style="width:35%;">
-  </div>
-</div>
+<br>
+
+<p style="text-align: center;">
+  <img src="Ian_Whiskey.jpg" style="height:220px; margin-right:20px;">
+  <img src="snowboard.jpg" style="height:220px;">
+</p>
 
 <br>
 

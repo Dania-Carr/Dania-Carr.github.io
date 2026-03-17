@@ -18,12 +18,12 @@
 <br>
 
 ## Dashboard
-<div style="width:100vw; height:1000px;">
-  <iframe 
-    src="https://public.tableau.com/views/MathvsELAAchievementinUSATableau/Dashboard1?:embed=y&:showVizHome=no" 
-    style="width:100%; height:100%; border:none;">
-  </iframe>
-</div>
+
+<br>
+
+<iframe src="https://public.tableau.com/views/MathvsELAAchievementinUSATableau/Dashboard1?:embed=y&:showVizHome=no" width="1000px" height="700px"></iframe>
+
+<br>
 
 ## Insights
 
