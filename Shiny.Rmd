@@ -27,7 +27,7 @@
 
 <br>
 
-<iframe src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" style="border: 1px solid #AAA; width: 1000px; height: 700px"></iframe>
+<iframe src="https://daniarachelcarr.shinyapps.io/timss-dashboard/" style="border: 1px solid #AAA; width: 900px; height: 750px"></iframe>
 
 <br>
 
