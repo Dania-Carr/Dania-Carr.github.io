@@ -23,7 +23,7 @@
 
 <br>
 
-### Dashboard 
+### Interactive Shiny Dashboard 
 
 <br>
 
