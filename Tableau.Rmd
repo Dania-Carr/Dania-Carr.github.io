@@ -21,7 +21,7 @@
 
 <br>
 
-<iframe src="https://public.tableau.com/views/MathvsELAAchievementinUSATableau/Dashboard1?:embed=y&:showVizHome=no" width="900px" height="750px"></iframe>
+<iframe src="https://public.tableau.com/views/MathvsELAAchievementinUSATableau/Dashboard1?:embed=y&:showVizHome=no" width="1100px" height="750px"></iframe>
 
 <br>
 

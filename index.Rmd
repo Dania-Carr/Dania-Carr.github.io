@@ -34,7 +34,7 @@ I am passionate about using quantitative and qualitative research methods, stati
 
 I love using various statistical methods to find meaningful patterns in complex datasets. I've used classical statistical analysis for hypothesis testing as well as machine learning techniques for prediction and classification. 
 
-#### Statistical Modeling <img src="Statistics_Icon.png" width="40" style="vertical-align: middle; margin-left: 8px;">
+#### <img src="Statistics_Icon.png" style="height:40px; vertical-align: -6px; margin-right: 10px;"> Statistical Modeling
 
 - Regression modeling
 - Hierarchical linear modeling
@@ -49,7 +49,7 @@ I love using various statistical methods to find meaningful patterns in complex 
 - Tree-based models (Random Forest, XGBoost)
 - Support vector machines (SVM)
 
-#### Programming <img src="Programming_Icon.png" width="40" style="vertical-align: middle; margin-left: 8px;">
+#### <img src="Programming_Icon.png" style="height:40px; vertical-align: -6px; margin-right: 10px;"> Programming 
 
 - R
 - Python
@@ -57,7 +57,7 @@ I love using various statistical methods to find meaningful patterns in complex 
 - SPSS
 - Qualtrics
 
-#### Visualization <img src="Visualization_Icon.png" width="40" style="vertical-align: middle; margin-left: 8px;">
+#### <img src="Visualization_Icon.png" style="height:40px; vertical-align: -6px; margin-right: 10px;"> Visualization
 
 - ggplot2
 - Plotly
@@ -65,7 +65,7 @@ I love using various statistical methods to find meaningful patterns in complex 
 - Shiny
 - Interactive dashboards
 
-#### Research Methods <img src="Research_Icon.png" width="40" style="vertical-align: middle; margin-left: 8px;">
+#### <img src="Research_Icon.png" style="height:40px; vertical-align: -6px; margin-right: 10px;"> Research Methods 
 
 - Experimental design
 - Mixed-method research
